@@ -10,40 +10,87 @@
     margin: 0 auto;
     background-color: black;
     font-family: 'Roboto', sans-serif;
-}
-   .calculator {
+   }
+   button {
+    width:8em; 
+    height: 6.5em; 
+    font-weight:bold;
+    font-size: 16px; 
+    color: white; 
+    background-color: #666666; 
+    border-radius: 3%;
+    border: 1px solid #433333;
+   }
+   
+   button:hover { 
+    background-color: #499999;
+   }
+   .operator{ 
+    background-color: #499999;
+   }
+   .clb {
+    color : Red;
+    background-color : white;
+   }
+   .eq {
+    background-color: #499999;
+    width : 410%; 
+    border-radius: 2%;
+   }
+   .box {
+   text-align:right; 
+   height: 50px;
+   padding: 2em;
+   border: 5px solid #499999;    
+   color: white; 
+   border-radius: 3px; 
+   background-color: black;
+   }
+   .calc {
     width: auto;
-    height: auto;
-    padding: 10px;
-    border: 5px solid #666666;
-    border-radius: 5px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
+    height: auto%; 
+    padding: 10px; 
+    border: 5px solid #666666; 
+    border-radius: 15px; 
+    margin: 0; 
+    position: absolute; 
+    top: 50%; left: 50%; 
     transform: translate(-50%, -50%);
    }
   </style>
  </head>
  <body>
-  <div class = "calculator">
-  <button id = "zero"> 0 </button>
-  <button id = "one"> 1 </button>
-  <button id = "two"> 2 </button>
-  <button id = "three"> 3 </button>
-  <button id = "four"> 4 </button>
-  <button id = "five"> 5 </button>
-  <button id = "six"> 6 </button>
-  <button id = "seven"> 7 </button>
-  <button id = "eight"> 8 </button>
-  <button id = "nine"> 9 </button>
-  <button id = "add"> + </button>
-  <button id = "sub"> - </button>
-  <button id = "multiply"> x </button>
-  <button id = "divided"> / </button>
-  <button id = "equalTo"> = </button>
-  <button id = "clear"> C </button>
+  <div class = "calc">
+  <p id="box" class="box">0</p>
+  <table>
+  <tr>
+  <td><button id = "one"> 1 </button></td>
+  <td><button id = "two"> 2 </button></td>
+  <td><button id = "three"> 3 </button></td>
+  <td><button id = "add" class = "operator"> + </button></td>
+  </tr>
+  <tr>
+  <td><button id = "four"> 4 </button></td>
+  <td><button id = "five"> 5 </button></td>
+  <td><button id = "six"> 6 </button></td>
+  <td><button id = "sub" class = "operator"> - </button></td>
+  </tr>
+  <tr>
+  <td><button id = "seven"> 7 </button></td>
+  <td><button id = "eight"> 8 </button></td>
+  <td><button id = "nine"> 9 </button></td>
+  <td><button id = "multiply" class = "operator"> x </button></td>
+  </tr>
+  <tr>
+  <td><button id = "clear" class = "clb"> C </button></td>
+  <td><button id = "zero"> 0 </button></td>
+  <td><button id = "dot"> . </button></td>
+  <td><button id = "divide" class = "operator"> / </button></td>
+  </tr>
+  <tr>
+  <td><button id = "equalTo" class = "eq"> =</button></td>
+  </tr>
+  <table>
   </div>
   <script src="script.js"></script>
  </body>
